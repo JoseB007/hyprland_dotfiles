@@ -1,0 +1,37 @@
+@import "/home/jose/.config/colors/colors-waybar.css";
+
+window {
+  margin: 0px;
+  background-color: @background;
+  border-radius: 0px;
+  color: @foreground;
+}
+
+#input {
+  border: 0px;
+	border-radius: 0px;
+  padding: 10px;
+  margin: 0px;
+  font-size: 16px;
+	color: @foreground;
+	background-color: @background;
+  padding: 15px;  /* vertical horizontal */
+}
+
+#inner-box {
+  padding: 8px 20px;
+}
+
+#entry {
+  padding: 6px;
+  margin: 2px;
+  border-radius: 6px;
+}
+
+#entry:selected {
+  background-color: @foreground;
+}
+
+#entry:selected label {
+  color: @background;
+}

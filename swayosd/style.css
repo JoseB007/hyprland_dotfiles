@@ -1,0 +1,48 @@
+
+@import "/home/jose/.cache/wal/colors.css";
+
+/* Ventana general */
+window {
+    padding: 0;
+    border-radius: 10px;
+    border: solid 1px var(--color0); /* borde = color base oscuro */
+    background-color: var(--background); /* fondo de pywal */
+}
+
+/* Contenedor */
+#container {
+    margin: 10px;
+}
+
+/* Iconos y texto */
+image, label {
+    color: var(--color7);
+}
+
+/* Estado deshabilitado */
+progressbar:disabled,
+image:disabled {
+    opacity: 0.5;
+}
+
+/* Barra de progreso */
+progressbar {
+    min-height: 5px;
+    border-radius: 999px;
+    background: transparent;
+    border: none;
+}
+
+trough {
+    min-height: inherit;
+    border-radius: inherit;
+    border: none;
+    background: rgba(255, 255, 255, 0.1); /* fondo semi-transparente */
+}
+
+progress {
+    min-height: inherit;
+    border-radius: inherit;
+    border: none;
+    background: var(--color4); /* color acento */
+}

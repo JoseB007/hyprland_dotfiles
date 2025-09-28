@@ -1,0 +1,71 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.time-inner, .date-inner{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.cal-container {
+    //   box-shadow: 0 2px 3px 2px $background;
+    background-color: $background;
+    border: 3px solid $foreground;
+    border-radius: 8px;
+    padding: 5px;
+    min-width: 330px;
+}
+
+.time-box {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.time-inner {
+    color: $color12;
+    font-size: 50px;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+
+.date-inner {
+    margin-top: 20px;
+    font-size: 18px;
+    color: $foreground;
+}
+
+.calendar-box {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 9px;
+}
+
+.cal {
+    border: 0;
+    padding: 5px;
+    color: $foreground;
+    &.header {
+        color: rgb(219, 193, 117);
+    }
+    &.button {
+        color: rgb(219, 193, 117);
+        &:hover {
+            color: rgb(230, 100, 100);
+        }
+    }
+    &:indeterminate {
+        color: rgba(205, 212, 246, 0.4);
+    }
+    &.highlight {
+        color: rgb(245, 162, 96);
+    }
+    &:selected {
+        color: rgb(200, 200, 90);
+    }
+    font-size: 1em;
+    padding: 0.2em;
+}

@@ -1,0 +1,7 @@
+(include "./widgets/active-linux/active-linux.yuck")
+
+(include "./widgets/date/date.yuck")
+
+(include "./widgets/calendar/calendar.yuck")
+
+(include "./widgets/osd/osd.yuck")

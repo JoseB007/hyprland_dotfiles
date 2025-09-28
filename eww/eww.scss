@@ -1,0 +1,21 @@
+// Import pywal generated colors
+@import "/home/jose/.cache/wal/colors.scss";
+
+
+@import './widgets/active-linux/active-linux.scss';
+
+
+@import './widgets/date/date.scss';
+
+
+@import './widgets/calendar/calendar.scss';
+
+
+@import './widgets/osd/osd.scss';
+
+
+
+// transparency
+ * {
+  background-color: transparent; 
+}

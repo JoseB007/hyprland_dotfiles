@@ -1,0 +1,9 @@
+[config]
+scheme = "dark"
+format = "hex"
+
+[templates.hyprland]
+input_path = "/home/jose/.config/matugen/templates/hyprland.conf"
+output_path = "/home/jose/.config/hypr/colors.conf"
+post_hook = ""
+
