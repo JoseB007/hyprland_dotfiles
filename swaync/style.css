@@ -1,0 +1,211 @@
+@import url("/home/jose/.cache/wal/colors.css");
+
+* {
+  outline: none;
+  font-family: "Montserrat";
+  font-size: 18px;
+  text-shadow: none;
+  background-color: transparent;
+}
+
+.control-center {
+  background-color: var(--background);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.65);
+  padding: 5px 25px 5px 25px;
+}
+
+.control-center .notification-row {
+  border-radius: 15px;
+  margin-top: 5px;
+}
+
+.notification {
+  background-color: var(--foreground);
+}
+
+.notification>*:last-child>* {
+  margin: 5px;
+}
+
+.summary {
+  font-size: 1.1rem;
+}
+
+.time {
+  font-size: 0.8rem;
+}
+
+.body {
+  font-size: 1rem;
+}
+
+.notification-content {
+  padding: 15px 10px 15px 20px;
+}
+
+.notification.critical {
+  background-color: alpha(var(--background), 0.5);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.65);
+}
+
+.notification.low,
+.notification.normal {
+  background-color: var(--background);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.65);
+}
+
+.close-button {
+  background-color: var(--foreground);
+  /* box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.35); */
+  color: var(--background);
+}
+
+.notification-group-header,
+.notification-group-icon {
+  font-size: 0.9rem;
+}
+
+.notification-group-collapse-button,
+.notification-group-close-all-button {
+  /* box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.35); */
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+trough highlight {
+  background: var(--foreground);
+}
+
+scale trough {
+  margin: 0rem 1rem;
+  background-color: var(--color12);
+  min-height: 8px;
+  min-width: 70px;
+}
+
+slider {
+  background-color: var(--color8);
+}
+
+tooltip {
+  background-color: var(--background);
+}
+
+/*** Widgets ***/
+/* Mpris widget */
+.widget-mpris {
+  margin: 30px 0px 30px 0px;
+  font-size: 1.3rem;
+}
+
+.widget-mpris-player {
+  padding: 16px;
+  border-radius: 12px;
+  /* border: 1px solid var(--foreground); */
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65); */
+}
+
+.widget-mpris-album-art {
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
+}
+
+.widget-mpris-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.widget-mpris-subtitle {
+  font-size: 1rem;
+}
+
+/* Volume widget */
+.widget-volume {
+  padding: 6px 5px 6px 5px;
+  margin: unset;
+  font-size: 1.3rem;
+}
+
+.widget-volume>box>label {
+  border-radius: 10px;
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+.widget-volume>box>button {
+  border: none;
+}
+
+.per-app-volume {
+  padding: 4px 8px 4px 8px;
+  margin: 8px 8px 8px 8px;
+}
+
+/* Backlight widget */
+.widget-backlight {
+  padding: 6px 5px 6px 5px;
+  margin: unset;
+  font-size: 1.3rem;
+}
+
+.widget-backlight>label {
+  border-radius: 10px;
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+/* DND widget */
+.widget-dnd {
+  font-weight: bold;
+  margin: 30px 0px 0px 0px;
+  padding: 20px 15px 15px 15px;
+}
+
+.widget-dnd>label {
+  font-size: 1.5rem;
+}
+
+.widget-dnd>switch {
+  font-size: initial;
+  border-radius: 100px;
+  background: var(--color6);
+  border: none;
+  box-shadow: none;
+  padding: 3px;
+}
+
+.widget-dnd>switch:checked {
+  background: var(--foreground);
+}
+
+.widget-dnd>switch slider {
+  background: var(--background);
+  border-radius: 12px;
+  min-width: 18px;
+  min-height: 18px;
+}
+
+/* Title widget */
+.widget-title {
+  padding: unset;
+  margin: unset;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.widget-title>label {
+  font-size: 1.5rem;
+}
+
+.widget-title>button {
+  padding: unset;
+  margin: unset;
+  text-shadow: none;
+  background: var(--foreground);
+  border: none;
+  box-shadow: none;
+  border-radius: 100px;
+  padding: 0px 6px;
+  transition: all 0.7s ease;
+  color: var(--background);
+}

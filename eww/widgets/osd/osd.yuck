@@ -70,18 +70,3 @@
       )
 	)
 )
-
-
-(defpoll volume
-  :interval "1s"
-  :initial '{"icon": "", "value": 50}'
-  "pamixer --get-volume-human | awk '{ 
-      if ($1 == \"muted\") { print \"{\\\"icon\\\":\\\"\\\",\\\"value\\\":0}\" } 
-      else { print \"{\\\"icon\\\":\\\"\\\",\\\"value\\\": \"$1\" }\" } 
-  }'")
-
-
-(defpoll brightness
-  :interval "2s"
-  :initial '{"icon": "", "value": 50}'
-  "brightnessctl -m | awk -F, '{ gsub(\"%\", \"\", $4); print \"{\\\"icon\\\":\\\"\\\",\\\"value\\\":\"$4\"}\" }'")

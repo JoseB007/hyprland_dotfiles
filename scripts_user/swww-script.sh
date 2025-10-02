@@ -88,21 +88,10 @@ sed \
   ~/.config/mako/config.template >~/.config/mako/config
 
 # ==========================
-# Copiar los archivos de la paleta de colores generada a la carpeta de colores
-# ==========================
-
-cp ~/.cache/wal/colors-waybar.css ~/.config/colors
-cp ~/.cache/wal/colors-kitty.conf ~/.config/colors
-cp ~/.cache/wal/colors.css ~/.config/colors
-cp ~/.cache/wal/colors.json ~/.config/colors
-cp ~/.cache/wal/colors.sh ~/.config/colors
-cp ~/.cache/wal/colors-rofi-dark.rasi ~/.config/colors
-
-# ==========================
 # Recargar servicios de aplicaciones
 # ==========================
 killall -9 waybar
 waybar &
-#
 makoctl reload
 /home/jose/eww/target/release/eww reload
+matugen image $wallpaper

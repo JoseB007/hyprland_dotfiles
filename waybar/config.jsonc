@@ -1,4 +1,5 @@
 {
+    "output": "eDP-1",
     "layer": "top",
     "position": "top",
     "height": 44,
@@ -17,8 +18,7 @@
     "modules-center": [
         "idle_inhibitor",
         "mpris",
-        "hyprland/window",
-        "custom/notification"
+        "hyprland/window"
     ],
     "modules-right": [
         "network#icon",
@@ -44,7 +44,7 @@
         "format": "󰣇",
         "tooltip": true,
         "tooltip-format": "I use Arch btw.",
-        "on-click": "$HOME/.config/eww/scripts/toggle-dashboard.sh", //"rofi -show drun",
+        "on-click": "$HOME/.config/eww/widgets/scripts/toggle-dashboard.sh", //"rofi -show drun",
         "on-click-right": "kitty btop --force-utf",
         "interval": "once"
     },
@@ -148,23 +148,11 @@
 
     "custom/notification": {
         "tooltip": false,
-        "format": "{icon}",
-        "format-icons": {
-            "notification": "<span foreground='red'><sup></sup></span>",
-            "none": "",
-            "dnd-notification": "<span foreground='red'><sup></sup></span>",
-            "dnd-none": "",
-            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-            "inhibited-none": "",
-            "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-            "dnd-inhibited-none": ""
-        },
-        "return-type": "json",
-        "exec-if": "which swaync-client",
-        "exec": "swaync-client -swb",
-        "on-click": "swaync-client -t -sw",
-        "on-click-right": "swaync-client -d -sw",
-        "escape": true
+        "format": "",
+
+        "on-click": "$HOME/.config/eww/widgets/notifications/scripts/toggle-notifications-history.sh"
+        // "on-click-right": "swaync-client -d -sw",
+
     },
 
     "network#icon": {
@@ -176,7 +164,8 @@
             "disconnected": "󰖪"
         },
         "tooltip": false,
-        "on-click": "$HOME/.config/eww/scripts/toggle-wifi.sh"
+        // "on-click": "$HOME/.config/eww/scripts/toggle-wifi.sh"
+        "on-click": "kitty -T nmtui -e nmtui"
     },
 
     "network#text": {
@@ -249,6 +238,7 @@
         "format": "{volume}% {format_source}",
         "format-muted": "{volume}% {format_source}",
         "format-source": " {volume}%",
+        "format-source-muted": "",
         "on-click": "pavucontrol",
         "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "tooltip": true,
@@ -269,7 +259,7 @@
 
     "clock#icon": {
         "format": "󰥔",
-        "tooltip": false,
+        "tooltip": false
     },
 
     "clock#text": {

@@ -5,3 +5,9 @@
 (include "./widgets/calendar/calendar.yuck")
 
 (include "./widgets/osd/osd.yuck")
+
+(include "./widgets/media/media.yuck")
+
+(include "./widgets/notifications/notifications.yuck")
+
+(include "./widgets/dashboard/dashboard.yuck")

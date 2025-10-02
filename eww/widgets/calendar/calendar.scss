@@ -11,7 +11,7 @@
 .cal-container {
     //   box-shadow: 0 2px 3px 2px $background;
     background-color: $background;
-    border: 3px solid $foreground;
+    border: 3px solid $color12;
     border-radius: 8px;
     padding: 5px;
     min-width: 330px;
@@ -48,6 +48,7 @@
     border: 0;
     padding: 5px;
     color: $foreground;
+    background-color: inherit;
     &.header {
         color: rgb(219, 193, 117);
     }

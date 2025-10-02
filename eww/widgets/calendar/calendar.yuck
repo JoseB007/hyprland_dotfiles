@@ -1,22 +1,19 @@
 (defwindow calender
   :namespace    "calender"
-  :monitor      0
-  :stacking     "fg"
-  :geometry     (geometry
-                  :x "10px"
-                  :y "10px"
-                  :anchor "top right"
-                  :height "400px"
-                )
-  (box
-    :space-evenly false
-    :halign       "end"
-    (revealer
-      :transition "none"
-      :reveal     calrev
-      :duration   "200ms"
-      (calender)
-    )
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry :anchor "top right"
+                        :x "10px"
+                        :y "10px"
+                        :width "20%"
+  )
+  (box :space-evenly false
+        :halign "end"
+            (revealer :transition "slideright"
+                      :reveal calrev
+                      :duration "350ms"
+                      (calender)
+            )
   )
 )
 
@@ -24,7 +21,7 @@
 
 (defpoll get_date
   :interval "1m"
-  "date +'%A, %d \de\ %B \de\ %Y'"
+  "date +'%d / %m / %Y, %A'"
 )
 
 (defpoll get_time
@@ -34,7 +31,7 @@
 
 (defwidget calender []
   (eventbox
-	:onhoverlost "./scripts/toggle-cal.sh"
+	:onhoverlost "./bar/popup-menus/scripts/toggle-cal.sh"
     (box
       :class        "cal-container"
       :space-evenly  false

@@ -1,35 +1,30 @@
 # Bordes y paddings
 border-size=3
-border-radius=8
+border-radius=0
 icons=1
 max-icon-size=64
 margin=20
 padding=15
+width=430
 
 # Colors
-background-color=#0e0e1a
-text-color=#edc7c4
-border-color=#edc7c4
-progress-color=#edc7c4
+background-color=#131219
+text-color=#c2dce4
+border-color=#c2dce4
+progress-color=#c2dce4
 
-
-
-# Notificacion de volumen
+#Notificacion de volumen
 [app-name=wp-vol]
-text-color=#0e0e1a
+text-color=#131219
 layer=overlay
 anchor=top-center
 history=0
 group-by=app-name
 format=<b>%s</b>\n%b
 
-
-
 # Notificacion de bateria
 [app-name=Power]
 layer=overlay
-
-
 
 # Prioridad de las notificaciones
 [urgency=low]

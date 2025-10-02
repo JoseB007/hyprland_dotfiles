@@ -1,9 +1,8 @@
 [config]
 scheme = "dark"
-format = "hex"
+format = "rgb"
 
-[templates.hyprland]
-input_path = "/home/jose/.config/matugen/templates/hyprland.conf"
-output_path = "/home/jose/.config/hypr/colors.conf"
-post_hook = ""
-
+[templates.colors]
+input_path = "/home/jose/.config/matugen/templates/colors.tpl"
+output_path = "/home/jose/.config/hypr/config/colors.conf"
+post_hook = "sed -i 's/, /,/g' /home/jose/.config/hypr/config/colors.conf"
