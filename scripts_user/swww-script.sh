@@ -90,8 +90,8 @@ sed \
 # ==========================
 # Recargar servicios de aplicaciones
 # ==========================
-killall -9 waybar
-waybar &
+# killall -9 waybar
+# waybar &
 makoctl reload
 /home/jose/eww/target/release/eww reload
 matugen image $wallpaper
