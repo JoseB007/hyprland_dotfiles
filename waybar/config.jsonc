@@ -123,9 +123,10 @@
     "hyprland/window": {
         "format": "{class}",
         "icon": true,
-        "on-click": "$HOME/.config/eww/scripts/toggle-music.sh",
+        // "on-click": "$HOME/.config/eww/scripts/toggle-music.sh",
         "tooltip": false,
         "rewrite": {
+            "com.obsproject.Studio": "OBS",
             "code": "Visual Studio Code",
             "firefox": "Firefox",
             "google-chrome": "Google Chrome",
@@ -285,7 +286,7 @@
         "status-icons": {
             "paused": "⏸"
         },
-        // "ignored-players": ["firefox"]
+        "ignored-players": ["mpv"],
         "max-length": 40,
         "interval": 1
     }

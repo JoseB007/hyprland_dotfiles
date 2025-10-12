@@ -21,7 +21,7 @@
 
 (defpoll get_date
   :interval "1m"
-  "date +'%d / %m / %Y, %A'"
+  "date +'%A, %d \de\ %B \de\ %Y'"
 )
 
 (defpoll get_time
